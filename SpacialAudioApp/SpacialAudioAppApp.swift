@@ -11,7 +11,7 @@ import SwiftUI
 struct SpacialAudioAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RoutesView()
         }
     }
 }

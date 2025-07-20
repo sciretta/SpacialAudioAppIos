@@ -35,16 +35,6 @@
 			path = SpacialAudioApp;
 			sourceTree = "<group>";
 		};
-		B3869D202E2D8FF100CD48F5 /* SpacialAudioAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpacialAudioAppTests;
-			sourceTree = "<group>";
-		};
-		B3869D2A2E2D8FF100CD48F5 /* SpacialAudioAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpacialAudioAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				B3869D122E2D8FF000CD48F5 /* SpacialAudioApp */,
-				B3869D202E2D8FF100CD48F5 /* SpacialAudioAppTests */,
-				B3869D2A2E2D8FF100CD48F5 /* SpacialAudioAppUITests */,
 				B3869D112E2D8FF000CD48F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				B3869D1F2E2D8FF100CD48F5 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				B3869D202E2D8FF100CD48F5 /* SpacialAudioAppTests */,
-			);
 			name = SpacialAudioAppTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				B3869D292E2D8FF100CD48F5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B3869D2A2E2D8FF100CD48F5 /* SpacialAudioAppUITests */,
 			);
 			name = SpacialAudioAppUITests;
 			packageProductDependencies = (
