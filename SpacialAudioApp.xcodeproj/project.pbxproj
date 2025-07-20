@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B3869D1E2E2D8FF100CD48F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3869D082E2D8FF000CD48F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3869D0F2E2D8FF000CD48F5;
+			remoteInfo = SpacialAudioApp;
+		};
+		B3869D282E2D8FF100CD48F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3869D082E2D8FF000CD48F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3869D0F2E2D8FF000CD48F5;
+			remoteInfo = SpacialAudioApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3869D102E2D8FF000CD48F5 /* SpacialAudioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacialAudioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3869D1D2E2D8FF100CD48F5 /* SpacialAudioAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacialAudioAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3869D272E2D8FF100CD48F5 /* SpacialAudioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacialAudioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B3869D122E2D8FF000CD48F5 /* SpacialAudioApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpacialAudioApp;
+			sourceTree = "<group>";
+		};
+		B3869D202E2D8FF100CD48F5 /* SpacialAudioAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpacialAudioAppTests;
+			sourceTree = "<group>";
+		};
+		B3869D2A2E2D8FF100CD48F5 /* SpacialAudioAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpacialAudioAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3869D0D2E2D8FF000CD48F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3869D1A2E2D8FF100CD48F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3869D242E2D8FF100CD48F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3869D072E2D8FF000CD48F5 = {
+			isa = PBXGroup;
+			children = (
+				B3869D122E2D8FF000CD48F5 /* SpacialAudioApp */,
+				B3869D202E2D8FF100CD48F5 /* SpacialAudioAppTests */,
+				B3869D2A2E2D8FF100CD48F5 /* SpacialAudioAppUITests */,
+				B3869D112E2D8FF000CD48F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3869D112E2D8FF000CD48F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3869D102E2D8FF000CD48F5 /* SpacialAudioApp.app */,
+				B3869D1D2E2D8FF100CD48F5 /* SpacialAudioAppTests.xctest */,
+				B3869D272E2D8FF100CD48F5 /* SpacialAudioAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3869D0F2E2D8FF000CD48F5 /* SpacialAudioApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3869D312E2D8FF100CD48F5 /* Build configuration list for PBXNativeTarget "SpacialAudioApp" */;
+			buildPhases = (
+				B3869D0C2E2D8FF000CD48F5 /* Sources */,
+				B3869D0D2E2D8FF000CD48F5 /* Frameworks */,
+				B3869D0E2E2D8FF000CD48F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B3869D122E2D8FF000CD48F5 /* SpacialAudioApp */,
+			);
+			name = SpacialAudioApp;
+			packageProductDependencies = (
+			);
+			productName = SpacialAudioApp;
+			productReference = B3869D102E2D8FF000CD48F5 /* SpacialAudioApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3869D1C2E2D8FF100CD48F5 /* SpacialAudioAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3869D342E2D8FF100CD48F5 /* Build configuration list for PBXNativeTarget "SpacialAudioAppTests" */;
+			buildPhases = (
+				B3869D192E2D8FF100CD48F5 /* Sources */,
+				B3869D1A2E2D8FF100CD48F5 /* Frameworks */,
+				B3869D1B2E2D8FF100CD48F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3869D1F2E2D8FF100CD48F5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B3869D202E2D8FF100CD48F5 /* SpacialAudioAppTests */,
+			);
+			name = SpacialAudioAppTests;
+			packageProductDependencies = (
+			);
+			productName = SpacialAudioAppTests;
+			productReference = B3869D1D2E2D8FF100CD48F5 /* SpacialAudioAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3869D262E2D8FF100CD48F5 /* SpacialAudioAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3869D372E2D8FF100CD48F5 /* Build configuration list for PBXNativeTarget "SpacialAudioAppUITests" */;
+			buildPhases = (
+				B3869D232E2D8FF100CD48F5 /* Sources */,
+				B3869D242E2D8FF100CD48F5 /* Frameworks */,
+				B3869D252E2D8FF100CD48F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3869D292E2D8FF100CD48F5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B3869D2A2E2D8FF100CD48F5 /* SpacialAudioAppUITests */,
+			);
+			name = SpacialAudioAppUITests;
+			packageProductDependencies = (
+			);
+			productName = SpacialAudioAppUITests;
+			productReference = B3869D272E2D8FF100CD48F5 /* SpacialAudioAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3869D082E2D8FF000CD48F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					B3869D0F2E2D8FF000CD48F5 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					B3869D1C2E2D8FF100CD48F5 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B3869D0F2E2D8FF000CD48F5;
+					};
+					B3869D262E2D8FF100CD48F5 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B3869D0F2E2D8FF000CD48F5;
+					};
+				};
+			};
+			buildConfigurationList = B3869D0B2E2D8FF000CD48F5 /* Build configuration list for PBXProject "SpacialAudioApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3869D072E2D8FF000CD48F5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B3869D112E2D8FF000CD48F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3869D0F2E2D8FF000CD48F5 /* SpacialAudioApp */,
+				B3869D1C2E2D8FF100CD48F5 /* SpacialAudioAppTests */,
+				B3869D262E2D8FF100CD48F5 /* SpacialAudioAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3869D0E2E2D8FF000CD48F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3869D1B2E2D8FF100CD48F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3869D252E2D8FF100CD48F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3869D0C2E2D8FF000CD48F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3869D192E2D8FF100CD48F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3869D232E2D8FF100CD48F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3869D1F2E2D8FF100CD48F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3869D0F2E2D8FF000CD48F5 /* SpacialAudioApp */;
+			targetProxy = B3869D1E2E2D8FF100CD48F5 /* PBXContainerItemProxy */;
+		};
+		B3869D292E2D8FF100CD48F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3869D0F2E2D8FF000CD48F5 /* SpacialAudioApp */;
+			targetProxy = B3869D282E2D8FF100CD48F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B3869D2F2E2D8FF100CD48F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3869D302E2D8FF100CD48F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3869D322E2D8FF100CD48F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leo.SpacialAudioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3869D332E2D8FF100CD48F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leo.SpacialAudioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3869D352E2D8FF100CD48F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leo.SpacialAudioAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpacialAudioApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpacialAudioApp";
+			};
+			name = Debug;
+		};
+		B3869D362E2D8FF100CD48F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leo.SpacialAudioAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpacialAudioApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpacialAudioApp";
+			};
+			name = Release;
+		};
+		B3869D382E2D8FF100CD48F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leo.SpacialAudioAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpacialAudioApp;
+			};
+			name = Debug;
+		};
+		B3869D392E2D8FF100CD48F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leo.SpacialAudioAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpacialAudioApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3869D0B2E2D8FF000CD48F5 /* Build configuration list for PBXProject "SpacialAudioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3869D2F2E2D8FF100CD48F5 /* Debug */,
+				B3869D302E2D8FF100CD48F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3869D312E2D8FF100CD48F5 /* Build configuration list for PBXNativeTarget "SpacialAudioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3869D322E2D8FF100CD48F5 /* Debug */,
+				B3869D332E2D8FF100CD48F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3869D342E2D8FF100CD48F5 /* Build configuration list for PBXNativeTarget "SpacialAudioAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3869D352E2D8FF100CD48F5 /* Debug */,
+				B3869D362E2D8FF100CD48F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3869D372E2D8FF100CD48F5 /* Build configuration list for PBXNativeTarget "SpacialAudioAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3869D382E2D8FF100CD48F5 /* Debug */,
+				B3869D392E2D8FF100CD48F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3869D082E2D8FF000CD48F5 /* Project object */;
+}
