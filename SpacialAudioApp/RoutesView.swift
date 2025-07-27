@@ -12,30 +12,16 @@ enum Screens: Hashable {
     case guest
 }
 
-struct HomeView: View {
-    var body: some View {
-        VStack {
-            Text("Home")
-            NavigationLink(value: Screens.owner) {
-                Text("Go to Owner")
-            }
-            NavigationLink(value: Screens.guest) {
-                Text("Go to Guest")
-            }
-        }
-    }
-}
-
 struct RoutesView: View {
     @State private var path: [Screens] = []
 
     var body: some View {
         NavigationStack(path: $path) {
-            HomeView()
+            HomeScreenView()
                 .navigationDestination(for: Screens.self) { screen in
                     switch screen {
                     case .home:
-                        HomeView()
+                        HomeScreenView()
                     case .owner:
                         OwnerScreenView()
                     case .guest:
@@ -47,5 +33,5 @@ struct RoutesView: View {
 }
 
 #Preview {
-    RoutesView()
+    RoutesView().environmentObject(AppState())
 }

@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+
+class AppState: ObservableObject {
+    @Published var nickname: String = ""
+}
+
 @main
-struct SpacialAudioAppApp: App {
+struct SpacialAudioApp: App {
+    @StateObject private var appState = AppState()
     var body: some Scene {
         WindowGroup {
-            RoutesView()
+            RoutesView().environmentObject(appState)
         }
     }
 }
+
