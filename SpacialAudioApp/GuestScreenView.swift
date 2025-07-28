@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct GuestScreenView: View {
+    @EnvironmentObject var appState: AppState
     var body: some View {
-        Text("Hello, World! from guest screen")
+        BasicInfoLayout {
+            VStack {
+                !appState.sessionCode.isEmpty
+                    ? AnyView(Text("SESSION CODE: \(appState.sessionCode)"))
+                    : AnyView(EnterSessionCode())
+            }
+            .onAppear {
+                appState.sessionCode = ""
+            }
+        }
     }
 }
 
 #Preview {
-    GuestScreenView()
+    var appState = AppState()
+    GuestScreenView().environmentObject(appState).onAppear {
+        appState.nickname = "Test"
+    }
 }

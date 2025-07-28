@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-
 class AppState: ObservableObject {
     @Published var nickname: String = ""
+    @Published var sessionCode: String = ""
 }
 
 @main
@@ -21,4 +21,3 @@ struct SpacialAudioApp: App {
         }
     }
 }
-

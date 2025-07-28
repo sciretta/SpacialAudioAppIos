@@ -14,14 +14,17 @@ enum Screens: Hashable {
 
 struct RoutesView: View {
     @State private var path: [Screens] = []
+    @EnvironmentObject var appState: AppState
 
     var body: some View {
+
         NavigationStack(path: $path) {
-            HomeScreenView()
+            HomeScreenView(path: $path)
                 .navigationDestination(for: Screens.self) { screen in
+
                     switch screen {
                     case .home:
-                        HomeScreenView()
+                        HomeScreenView(path: $path)
                     case .owner:
                         OwnerScreenView()
                     case .guest:
