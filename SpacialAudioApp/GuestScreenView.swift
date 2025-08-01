@@ -12,9 +12,18 @@ struct GuestScreenView: View {
     var body: some View {
         BasicInfoLayout {
             VStack {
-                !appState.sessionCode.isEmpty
-                    ? AnyView(Text("SESSION CODE: \(appState.sessionCode)"))
-                    : AnyView(EnterSessionCode())
+                if appState.sessionCode.isEmpty {
+                    EnterSessionCode()
+                } else {
+                    Text("SESSION CODE: \(appState.sessionCode)")
+                    if appState.status == .none
+                        && appState.recordedAudioPath != nil
+                    {
+                        PlayButton()
+                    } else {
+                        RecorderButton()
+                    }
+                }
             }
             .onAppear {
                 appState.sessionCode = ""
@@ -25,7 +34,9 @@ struct GuestScreenView: View {
 
 #Preview {
     var appState = AppState()
-    GuestScreenView().environmentObject(appState).onAppear {
+    GuestScreenView().environmentObject(appState).environmentObject(
+        AudioRecorder()
+    ).onAppear {
         appState.nickname = "Test"
     }
 }

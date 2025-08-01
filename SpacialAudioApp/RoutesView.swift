@@ -36,5 +36,5 @@ struct RoutesView: View {
 }
 
 #Preview {
-    RoutesView().environmentObject(AppState())
+    RoutesView().environmentObject(AppState()).environmentObject(AudioRecorder())
 }

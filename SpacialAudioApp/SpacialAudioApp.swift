@@ -10,14 +10,27 @@ import SwiftUI
 class AppState: ObservableObject {
     @Published var nickname: String = ""
     @Published var sessionCode: String = ""
+    @Published var recordedAudioPath: String?
+    @Published var status: AppStatus = .none
+}
+
+enum AppStatus {
+    case recordingAudio
+    case playingAudio
+    case receivingAudios
+    case processing
+    case sendingAudio
+    case none
 }
 
 @main
 struct SpacialAudioApp: App {
     @StateObject private var appState = AppState()
+    @StateObject private var recorder = AudioRecorder()
+
     var body: some Scene {
         WindowGroup {
-            RoutesView().environmentObject(appState)
+            RoutesView().environmentObject(appState).environmentObject(recorder)
         }
     }
 }
