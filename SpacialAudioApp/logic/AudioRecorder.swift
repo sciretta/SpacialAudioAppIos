@@ -1,12 +1,16 @@
 import AVFoundation
 import Foundation
 
-class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
+class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
     private var recorder: AVAudioRecorder?
     private var player: AVAudioPlayer?
     private var recordingSession: AVAudioSession!
+    private var timer: Timer?
 
     @Published var isRecording = false
+    @Published var isPlaying = false
+    @Published var currentTime: TimeInterval = 0
+    @Published var duration: TimeInterval = 1 
 
     private var audioURL: URL {
         getDocumentsDirectory().appendingPathComponent("recording.m4a")
@@ -45,6 +49,7 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
             recorder?.record()
 
             isRecording = true
+            isPlaying = false
             print("Grabando en: \(audioURL)")
 
             return audioURL.path
@@ -66,17 +71,40 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
             try recordingSession.setActive(true)
 
             player = try AVAudioPlayer(contentsOf: audioURL)
+            player?.delegate = self
             player?.prepareToPlay()
             player?.play()
+
+            isPlaying = true
+            duration = player?.duration ?? 1
+            startProgressTimer()
+
             print("🎧 Reproduciendo audio")
         } catch {
             print("Error al reproducir: \(error)")
         }
     }
 
+    private func startProgressTimer() {
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
+            guard let self = self, let player = self.player else { return }
+            self.currentTime = player.currentTime
+
+            if !player.isPlaying {
+                self.timer?.invalidate()
+                self.isPlaying = false
+            }
+        }
+    }
+
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        isPlaying = false
+        timer?.invalidate()
+        currentTime = 0
+    }
+
     private func getDocumentsDirectory() -> URL {
-        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[
-            0
-        ]
+        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
 }

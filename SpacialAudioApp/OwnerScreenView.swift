@@ -17,9 +17,17 @@ struct OwnerScreenView: View {
                 if loading {
                     ProgressView()
                 } else {
-                    Text(
-                        "Hello, World! from owner screen \n \(appState.sessionCode)"
-                    )
+                    Text("SESSION CODE: \(appState.sessionCode)")
+                    GuestsListView()
+                    Spacer()
+                    if appState.status == .none
+                        && appState.recordedAudioPath != nil
+                    {
+                        PlayButton()
+                    } else {
+                        RecorderButton()
+                    }
+                    Spacer()
                 }
             }.onAppear {
                 Task {
@@ -38,7 +46,7 @@ struct OwnerScreenView: View {
 
 #Preview {
     var appState = AppState()
-    OwnerScreenView().environmentObject(appState).onAppear {
+    OwnerScreenView().environmentObject(appState).environmentObject(AudioRecorder()).onAppear {
         appState.nickname = "Test"
     }
 }

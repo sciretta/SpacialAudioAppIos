@@ -12,6 +12,7 @@ class AppState: ObservableObject {
     @Published var sessionCode: String = ""
     @Published var recordedAudioPath: String?
     @Published var status: AppStatus = .none
+    @Published var guests: [String] = ["Ana", "Carlos", "Luis", "María"]
 }
 
 enum AppStatus {
