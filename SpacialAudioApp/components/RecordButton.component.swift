@@ -10,6 +10,8 @@ import SwiftUI
 struct RecorderButton: View {
     @EnvironmentObject var recorder: AudioRecorder
     @EnvironmentObject var appState: AppState
+    
+    var onStop: (() -> Void)? = nil
 
     var body: some View {
         VStack(spacing: 20) {
@@ -17,6 +19,7 @@ struct RecorderButton: View {
                 if recorder.isRecording {
                     recorder.stopRecording()
                     appState.status = .none
+                    onStop?()
                 } else {
                     let filePath = recorder.startRecording()
 
@@ -34,6 +37,9 @@ struct RecorderButton: View {
 }
 
 #Preview {
-    return RecorderButton()
+    return RecorderButton(onStop: {
+        print("🎤 Grabación terminada, ejecutar acción")
+        // Por ejemplo: enviar el audio, navegar, cambiar estado, etc.
+    })
         .environmentObject(AppState()).environmentObject(AudioRecorder())
 }

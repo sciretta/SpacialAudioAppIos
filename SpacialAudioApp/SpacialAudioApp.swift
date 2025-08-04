@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let API_URL = "http://127.0.0.1:3000/"
+
 class AppState: ObservableObject {
     @Published var nickname: String = ""
     @Published var sessionCode: String = ""

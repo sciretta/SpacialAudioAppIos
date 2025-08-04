@@ -59,10 +59,11 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate, AVAudi
         }
     }
 
-    func stopRecording() {
+    func stopRecording()-> String?  {
         recorder?.stop()
         recorder = nil
         isRecording = false
+        return audioURL.path
     }
 
     func playRecording() {

@@ -13,7 +13,7 @@ public struct EnterSessionCode: View {
         TextField("Enter code", text: $sessionCode)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .onChange(of: sessionCode) { oldValue, newValue in
-                if newValue.count >= 6 {
+                if newValue.count >= 8 {
                     appState.sessionCode = newValue
                 }
             }
